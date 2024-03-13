@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music</title>
+  <!-- Bootstrap css link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- google font-size -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Oleo+Script+Swash+Caps&family=Open+Sans:wght@600&family=Roboto+Slab&family=Ubuntu:wght@700&family=Varela+Round&display=swap" rel="stylesheet">
+  <!-- css link -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!-- navbar start -->
+  <nav class="navbar bg-light fixed-top">
+    <div class="container-fluid">
+     <li>
+      <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon" id="navbar-iconwidth"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img src="image/footer-logo.png" alt="logo" >
+      </a>
+     </li>
+      <li class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header side-logo-imageadjust">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/footer-logo.png" alt="logo" >
+              </a>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" style="background-color: #ecf0f1;">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+                      </svg>
+                </span>
+              <span class="left-navbar-pad">
+                Home
+              </span>  
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="allsong.html"> 
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"></path>
+                  </svg>
+                </span>
+                <span class="left-navbar-pad">
+                    All songs
+                </span>
+                
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="discover.html"> 
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                            <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                          </svg>
+                    </span>
+                    <span class="left-navbar-pad">
+                        Discover Songs
+                    </span>
+                  </a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="newrelease.html">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                            <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                          </svg>
+                    </span>
+                    <span class="left-navbar-pad">
+                        New release
+                    </span>
+                    
+                 </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="artish.html">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-heart" viewBox="0 0 16 16">
+                  <path d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z"/>
+                </svg>
+              </span>
+              <span class="left-navbar-pad">
+                Artists
+              </span>    
+              </a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="youraccount.html">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                      </svg>
+                </span>
+                <span class="left-navbar-pad">
+                    Accounts for You
+                </span>    
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                  <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                </svg>
+              </span>
+              <span class="left-navbar-pad">
+                  About Us
+              </span>    
+              </a>
+          </li>
+          </ul>
+        </div>
+      </li>
+      
+      <li class="serach-top-wrap" style="">
+        <form class="d-flex search-box" style="margin: 2px 5px;" >
+          <button class="btn " type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+          <input  type="search" placeholder="Search for artists, songs"  style="border:none;outline: none;background-color:#f8f9fa;">
+        </form>
+      </li>
+      <li class="sing-up">
+        <span class="account-summary"><a href="login.html">Log in</a>
+        <span> / </span>
+        <a href="signin.html">Sign up</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path>
+        </svg>
+        </span>
+         <span><img src="image/googlePlaystotre.png" alt="" style="width:100px;"></span>
+        <span><img src="image/appleappstore.png" alt="" style="width:87px;"></span> 
+        <!-- <span style=" color: #ffa20e;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+          <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+          <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+        </svg>&nbsp;Upload</span> -->
+      </li>
+      <!-- <li>
+        <span><img src="image/googlePlaystotre.png" alt="" style="width:12%;"></span>
+          <span><img src="image/appleappstore.png" alt="" style="width:9%;"></span>
+      </li> -->
+      <li class="mobile-view-purpose">
+        <button class="btn " type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+      </button>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path>
+        </svg>
+      </span>
+      </li>
+      
+    </div>
+  </nav>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+<script src="audioplayer/js/mediaelement-and-player.min.js"></script>
+<link rel="stylesheet" href="audioplayer/css/font-awesome.min.css" />
+	<style type="text/css">
+		.audio-player { margin: 0 auto;}
+	</style>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+<script src="audioplayer/js/mediaelement-and-player.min.js"></script>
+<link rel="stylesheet" href="audioplayer/css/font-awesome.min.css" />
+
+<link href="audioplayer2/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+<!-- <script type="text/javascript" src="../../lib/jquery.min.js"></script> -->
+<script type="text/javascript" src="audioplayer2/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="audioplayer2/js/jplayer.playlist.min.js"></script>
+<style>
+
+
+	
+		.audio-player { margin: 0 auto;}
+    .mejs-container.mejs-audio {
+    height: auto !important;
+}
+div.audio-player {
+  height: auto !important;
+}
+.carousel-indicators [data-bs-target] {
+    border-top: none;
+    border-bottom: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+	</style>
+
+
+
+    
+  </div>
+  <div class="container-fluid bannererr"  style="--bs-gutter-x:0rem !important;">
+    <!-- <div class="container">
+      <h2>Listing Music</h2>
+    </div> -->
+
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="margin-top: 82px;margin-bottom: 25px;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000" style="--bs-gutter-x:0rem !important;">
+          <img src="image/banner1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000" style="--bs-gutter-x:0rem !important;">
+          <img src="image/banner2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000" style="--bs-gutter-x:0rem !important;" >
+          <img src="image/banner3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000" style="--bs-gutter-x:0rem !important;">
+          <img src="image/banner4.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+   
+
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> -->
+    </div>
+
+    
+  </div>
+
+
+  <div class="container-fluid song-list-banner my-4">
+    <div class="container">
+    
+
+
+<div class="container-fluid audioplayer-01 my-4">
+  <div class="conatiner audio-player">
+    <div class="row my-4 artishprofilecontent">
+        <div class="col-xl-2 col-xxl-2 col-md-2 col-sm-10">
+            <img src="image/artsh@.jpeg" alt="" style="width:100%;">
+        </div>
+        <div class="col-xl-6  col-xxl-6 col-md-6 col-sm-6 p-2 mt-3">
+           <div class="main-heading">
+            <p class="main-heading-wrap" style="margin-bottom:0px;">Rexxie</p>
+            <span style="margin-top:5px !important;">
+              <button class="FollowButton-module">
+                Follow
+              </button>
+            </span>
+            <div class="social-parenticon" style="float:right;">
+              <div class="social-icon-001">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                  <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"></path>
+                </svg>
+              </div>
+              <ul class="social-share-icone" style="display: none;">
+                
+                
+                <li class="social-icon" id="iconsoc">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                </svg>
+                </li>
+                <li class="social-icon" id="iconsoc">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                </svg>
+                </li>
+                <li class="social-icon" id="iconsoc">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                </svg>
+                </li>
+              </ul>
+            </div>
+           </div>
+           <p class="mardintsgid mt-1">
+            @rexxiepondabeat
+           </p>
+           <ul class="ArtistHeader-module__stats" style="margin-top:-10px;">
+            <li class="ArtistHeader-module__stat2bk95"><span style="color:#ff0300;">487K</span> Followers</li>
+            <!-- <li class="ArtistHeader-module__stat2bk95"><span style="color:#ff0300;">859K</span>
+             </li> -->
+             <!-- Monthly Listeners
+            <li class="ArtistHeader-module__stat2bk95"><span style="color:#ff0300;">87.8M</span> Total Plays</li> -->
+          </ul>
+        </div>
+        <div class="col-xl-4 col-xxl-4 col-md-6 col-sm-6">
+
+        </div>
+    </div>
+    <div class="row liststylemusic udioplayer-wrap ">
+      <div class=" col-xxl-2 col-md-2 col-sm-4 ">
+        <img src="image/artsh@.jpeg" alt="" style="width:100%;">
+      </div>
+      <div class="col-xl-5 col-xxl-5 col-md-5 col-sm-6 content">
+         <h4><strong>Red Dead</strong></h4>
+               <h5>Manifest, Polo G &amp; Calboy</h5>
+               <ul>
+                  <li>
+                     <span>
+                     Release Date:  
+                     </span>
+                     <span>
+                     December 2, 2022
+                     </span>
+                  </li>
+                  <li class="paid">Paid</li>
+               </ul>
+      </div>
+      <div class="col-xl-5 col-xxl-5 col-md-5 col-sm-10 mobilefacebook-twitter">
+       
+        <!-- <img class="cover" src="audioplayer/img/cover.png" alt=""> -->
+         <ul>
+            <li style="display:inline-block;">
+              <span class="audispan">
+                <audio id="audio-player"  src="audioplayer/media/demo.mp3" type="audio/mp3" controls="controls"></audio>
+              </span>
+             <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+              </svg>
+             </span>
+               <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+               </span>
+               <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                </svg>
+               </span>
+               <span>
+                <img src="image/playlist.png" alt="" style="width:100%;">
+                <!-- <p style="font-size: 10px;">Add to Playlist</p> -->
+               </span>
+            </li>
+         </ul>
+      </div>
+    </div>
+    <div class="row liststylemusic udioplayer-wrap">
+      <div class=" col-xxl-2 col-md-2 col-sm-4">
+        <img src="image/artsh@.jpeg" alt="" style="width:100%;">
+      </div>
+      <div class="col-xl-5 col-xxl-5 col-md-5 col-sm-6 content">
+         <h4><strong>Red Dead</strong></h4>
+               <h5>Manifest, Polo G &amp; Calboy</h5>
+               <ul>
+                  <li>
+                     <span>
+                     Release Date:  
+                     </span>
+                     <span>
+                     December 2, 2022
+                     </span>
+                  </li>
+                  <li class="paid">Paid</li>
+               </ul>
+      </div>
+      <div class="col-xl-5 col-xxl-5 col-md-5 col-sm-10 mobilefacebook-twitter">
+       
+        <!-- <img class="cover" src="audioplayer/img/cover.png" alt=""> -->
+         <ul>
+            <li style="display:inline-block;">
+              <span class="audispan">
+                <audio id="audio-player"  src="audioplayer/media/demo.mp3" type="audio/mp3" controls="controls"></audio>
+              </span>
+             <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+              </svg>
+             </span>
+               <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+               </span>
+               <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                </svg>
+               </span>
+               <span>
+                <img src="image/playlist.png" alt="" style="width:100%;">
+                <!-- <p style="font-size: 10px;">Add to Playlist</p> -->
+               </span>
+            </li>
+         </ul>
+      </div>
+    </div>
+     <div class="row liststylemusic udioplayer-wrap">
+      <div class=" col-xxl-2 col-md-2 col-sm-4">
+        <img src="image/artsh@.jpeg" alt="" style="width:100%;">
+      </div>
+      <div class="col-xl-5 col-xxl-5 col-md-5 col-sm-6 content">
+         <h4><strong>Red Dead</strong></h4>
+               <h5>Manifest, Polo G &amp; Calboy</h5>
+               <ul>
+                  <li>
+                     <span>
+                     Release Date:  
+                     </span>
+                     <span>
+                     December 2, 2022
+                     </span>
+                  </li>
+                  <li class="unpaid">Unpaid</li>
+               </ul>
+      </div>
+      <div class="col-xl-5 col-xxl-5 col-md-5 col-sm-10 mobilefacebook-twitter">
+       
+        <!-- <img class="cover" src="audioplayer/img/cover.png" alt=""> -->
+         <ul>
+            <li style="display:inline-block;">
+              <span class="audispan">
+                <audio id="audio-player"  src="audioplayer/media/demo.mp3" type="audio/mp3" controls="controls"></audio>
+              </span>
+             <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+              </svg>
+             </span>
+               <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+               </span>
+               <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                </svg>
+               </span>
+               <span>
+                <img src="image/playlist.png" alt="" style="width:100%;">
+                <!-- <p style="font-size: 10px;">Add to Playlist</p> -->
+               </span>
+            </li>
+         </ul>
+      </div>
+    </div>
+    <div class="row liststylemusic udioplayer-wrap">
+      <div class=" col-xxl-2 col-md-2 col-sm-4">
+        <img src="image/artsh@.jpeg" alt="" style="width:100%;">
+      </div>
+      <div class="col-xl-5 col-xxl-5 col-md-5 col-sm-6 content">
+         <h4><strong>Red Dead</strong></h4>
+               <h5>Manifest, Polo G &amp; Calboy</h5>
+               <ul>
+                  <li>
+                     <span>
+                     Release Date:  
+                     </span>
+                     <span>
+                     December 2, 2022
+                     </span>
+                  </li>
+                  <li class="paid">Paid</li>
+               </ul>
+      </div>
+      <div class="col-xl-5 col-xxl-5 col-md-5 col-sm-10 mobilefacebook-twitter">
+       
+        <!-- <img class="cover" src="audioplayer/img/cover.png" alt=""> -->
+         <ul>
+            <li style="display:inline-block;">
+              <span class="audispan">
+                <audio id="audio-player"  src="audioplayer/media/demo.mp3" type="audio/mp3" controls="controls"></audio>
+              </span>
+             <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+              </svg>
+             </span>
+               <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+               </span>
+               <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                </svg>
+               </span>
+               <span>
+                <img src="image/playlist.png" alt="" style="width:100%;">
+                <!-- <p style="font-size: 10px;">Add to Playlist</p> -->
+               </span>
+            </li>
+         </ul>
+      </div>
+    </div>
+   
+    
+  </div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+  <div class="footer001 show">
+<div id="jp_container_1" class="jp-video jp-video-270p" role="application" aria-label="media player">
+	<div class="jp-type-playlist">
+		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+		<div class="jp-gui">
+			<div class="jp-video-play">
+				<button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+			</div>
+			<div class="jp-interface">
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+           
+				<div class="jp-controls-holder">
+            <div class="coverimage">
+               <img src="audioplayer/img/cover.png"> <span>Gaurav Kuamr jha</span>
+            </div>
+					<div class="jp-controls">
+						<button class="jp-previous" role="button" tabindex="0">previous</button>
+						<button class="jp-play" role="button" tabindex="0">play</button>
+						<button class="jp-next" role="button" tabindex="0">next</button>
+						<!-- <button class="jp-stop" role="button" tabindex="0">stop</button> -->
+					</div>
+					<div class="jp-volume-controls">
+						<button class="jp-mute" role="button" tabindex="0">mute</button>
+						<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+						<div class="jp-volume-bar">
+							<div class="jp-volume-bar-value"></div>
+						</div>
+					</div>
+					<div class="jp-toggles">
+						<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+            <span class="shuffl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"/>
+                <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"/>
+              </svg>
+            </span>
+           
+            <ul style="display:none;" id="btn-opt">
+              <li>download</li>
+            </ul>
+						<!-- <button class="jp-shuffle" role="button" tabindex="0">shuffle</button> -->
+						<!-- <button class="jp-full-screen" role="button" tabindex="0">full screen</button> -->
+					</div>
+				</div>
+				<div class="jp-details">
+					<div class="jp-title" aria-label="title">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<div class="jp-playlist">
+			<ul>
+				<!-- The method Playlist.displayPlaylist() uses this unordered list -->
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		
+	</div>
+</div>
+</div>
+
+
+ <!-- Footer -->
+
+ <div class="container-fluid border-bottom border-top " style="background-color:#133254;color:white;">
+  <div class="container mt-2">
+    <div class="row p-4 feeter">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <!-- Content -->
+        <h6 class="text-uppercase web-logo mb-4">
+          <a class="navbar-brand" href="index.html">
+            <img src="image/footer-logo.png" alt="logo" >
+            </a>
+        </h6>
+        <p> © 2021 Copyright</p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 dowp-content">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">
+          Browse
+        </h6>
+        <p>
+          <a href="index.html" class="text-reset">Home</a>
+        </p>
+        <p>
+          <a href="#" class="text-reset">Trending</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Top Songs</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Top Albums</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Playlists</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 dowp-content">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">
+          About
+        </h6>
+        <p>
+          <a href="#!" class="text-reset">About</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Accounts for You</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Recently Added</a>
+        </p>
+        
+        <p>
+          <a href="#!" class="text-reset">Blog</a> 
+        </p>
+       
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 dowp-content">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">Resources</h6>
+        <p>Privacy Policy</p>
+        <p>
+          Terms of Service
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Help</a> 
+        </p>
+      </div>
+      <!-- Grid column -->
+    </div>
+  </div>
+</div>
+<div class="container-fluid  border-bottom" style="background-color: #133254;color:white;">
+  <div class="container">
+    <div class="row p-4 get">
+      <div class="col-xl-6 col-xxl-6 col-md-6 col-sm-10  ">
+        <p>Follow Us
+
+          <span class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-facebook" viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+          </svg>
+        </span>
+        <span class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
+            viewBox="0 0 16 16">
+            <path
+              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+          </svg>
+        </span>
+        <span class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+          </svg>
+        </span>
+        <span class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+          </svg>
+        </span>
+        </p>
+        
+      </div>
+      <div class="col-xl-6 col-xxl-6 col-md-6 col-sm-10">
+        <p class="text-center" style="  text-align: end;">
+        <span><img src="image/googlePlaystotre.png" alt="" style="width:20%;"></span>
+        <span><img src="image/appleappstore.png" alt="" style="width:16%;"></span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- <div class="container-fluid" style="background-color: #133254;color:white;">
+  <div class="container">
+    <div class="text-center p-4 copy" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2021 Copyright
+    </div>
+  </div>
+</div> -->
+
+
+<!-- Bootstrap js link -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+  crossorigin="anonymous"></script>
+<!-- js link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+<!-- js link -->
+<script src="index.js"></script>
+</body>
+
+</html>
+
+
+<style>
+.row.audioplayer-01 {
+  border-bottom: 16px solid #00000021;
+}
+.shuffl{
+  margin-left:10px;
+}
+.shuffl svg{
+  vertical-align:unset;
+  color:white;
+}
+
+@media only screen and (max-width: 760px) {
+  .container-fluid.song-list-banner.my-4 {
+    margin-bottom: 500px !important;
+}
+  }
+  @media only screen and (max-width: 576px) {
+  .container-fluid.song-list-banner.my-4 {
+    margin-bottom: 900px !important;
+}
+  }
+
+</style>
+<link rel="stylesheet" href="audioplayer/css/style.css" media="screen">
+
+<script>
+  $(document).ready(function() {
+    $('audio').mediaelementplayer({
+      alwaysShowControls: true,
+      features: ['playpause','volume','progress'],
+      audioVolume: 'horizontal',
+      audioWidth: "100%",
+      audioHeight: 220
+    });
+  });
+
+
+  function  threedotbtn() {
+    var x = document.getElementById("btn-opt");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      x.style.margin="-40px 0px 0px 0px";
+     
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+
+</script>
+
+
+
+
+
+  <style>
+  .row.audioplayer-01 {
+    border-bottom: 16px solid #00000021;
+}
+
+.footer001 {
+    z-index: 550;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 83px;
+    background-color: #000;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all .3s;
+}
+.footer001.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .3s;
+}
+
+.jp-interface {
+    background-color: #133254;
+}
+
+.song-list-banner .container .row {
+    background-color: #183658;
+    padding: 20px 10px 20px 10px !important;
+}
+.container-fluid{
+--bs-gutter-x: none !important;
+padding-left: 0px !important;
+padding-right: 0px !;
+}
+div#jp_container_1 {
+    width: 100%;
+}
+.coverimage span {
+    color: #fff;
+}
+.jp-next,.jp-next:focus {
+    background-size: 27px;
+    margin-top: 9px;
+}
+.jp-play, .jp-state-playing .jp-play, .jp-state-playing .jp-play:focus,.jp-state-playing .jp-play:focus,.jp-play:focus {
+   
+    background-size: 26px;
+    margin-top: 5px;
+    margin-left: 13px;
+}
+.jp-previous, .jp-previous:focus {
+    background-size: 29px;
+}
+.jp-video .jp-type-playlist .jp-controls {
+    /* width: 402px; */
+    margin:0px !important;
+}
+.jp-video .jp-current-time ,.jp-video .jp-duration {
+  color:white;
+}
+.jp-video .jp-progress{
+  height:6px;
+}
+.jp-video .jp-toggles{
+position:unset;;
+}
+/* element.style {
+} */
+.jp-state-looped .jp-repeat:focus {
+    background: url(../image/playMode_loop-DKJZBDLT.svg) no-repeat;
+    background-size: 20px;
+}
+</style>
+  <link rel="stylesheet" href="audioplayer/css/style.css" media="screen">
+  
+  <script>
+		$(document).ready(function() {
+			$('audio').mediaelementplayer({
+				alwaysShowControls: true,
+				features: ['playpause','volume','progress'],
+				audioVolume: 'horizontal',
+				audioWidth: "100%",
+				audioHeight: 220
+			});
+		});
+	</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		{
+			title:"Cro Magnon Man",
+			artist:"The Stark Palace",
+			mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg",
+			//poster: "http://www.jplayer.org/audio/poster/The_Stark_Palace_640x360.png"
+		},
+		{
+			title:"Your Face",
+			artist:"The Stark Palace",
+			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg",
+			//poster: "http://www.jplayer.org/audio/poster/The_Stark_Palace_640x360.png"
+		},
+		{
+			title:"Hidden",
+			artist:"Miaow",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg",
+		//	poster: "http://www.jplayer.org/audio/poster/Miaow_640x360.png"
+		},
+		{
+			title:"Big Buck Bunny Trailer",
+			artist:"Blender Foundation",
+			m4v:"http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v",
+			ogv:"http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv",
+			webmv: "http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm",
+		//	poster:"http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
+		},
+		{
+			title:"Finding Nemo Teaser",
+			artist:"Pixar",
+			m4v: "http://www.jplayer.org/video/m4v/Finding_Nemo_Teaser.m4v",
+			ogv: "http://www.jplayer.org/video/ogv/Finding_Nemo_Teaser.ogv",
+			webmv: "http://www.jplayer.org/video/webm/Finding_Nemo_Teaser.webm",
+			//poster: "http://www.jplayer.org/video/poster/Finding_Nemo_Teaser_640x352.png"
+		},
+		{
+			title:"Cyber Sonnet",
+			artist:"The Stark Palace",
+			mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg",
+			//poster: "http://www.jplayer.org/audio/poster/The_Stark_Palace_640x360.png"
+		},
+		{
+			title:"Incredibles Teaser",
+			artist:"Pixar",
+			m4v: "http://www.jplayer.org/video/m4v/Incredibles_Teaser.m4v",
+			ogv: "http://www.jplayer.org/video/ogv/Incredibles_Teaser.ogv",
+			webmv: "http://www.jplayer.org/video/webm/Incredibles_Teaser.webm",
+			//poster: "http://www.jplayer.org/video/poster/Incredibles_Teaser_640x272.png"
+		},
+		{
+			title:"Tempered Song",
+			artist:"Miaow",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg",
+			//poster: "http://www.jplayer.org/audio/poster/Miaow_640x360.png"
+		},
+		{
+			title:"Lentement",
+			artist:"Miaow",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-03-Lentement.ogg",
+			//poster: "http://www.jplayer.org/audio/poster/Miaow_640x360.png"
+		}
+	], {
+		swfPath: "../../dist/jplayer",
+		supplied: "webmv, ogv, m4v, oga, mp3",
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true,
+		audioFullScreen: true,
+      
+	});
+});
+//]]>
+</script>
+<style>
+	div#jquery_jplayer_1 {
+    display: none;
+}
+.jp-playlist {
+    display: none;
+}
+.jp-controls-holder {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+}
+.jp-video .jp-type-playlist .jp-controls {
+   /* margin-left: 326px; */
+}
+.jp-volume-controls {
+    display: none;
+}
+
+.coverimage img {
+    width: 50px;
+    border-radius: 50%;
+    /* margin-top: 10px; */
+}
+.coverimage {
+    float: left;
+    margin-left:10px;
+}
+</style>
